@@ -9,7 +9,7 @@ class CreateGatewayTransactionsTable extends Migration
 
     private function getTable()
     {
-        return config(\Parsisolution\Gateway\GatewayManager::CONFIG_FILE_NAME.'.table', 'gateway_transactions');
+        return config(\wellbornman\Gateway\GatewayManager::CONFIG_FILE_NAME.'.table', 'gateway_transactions');
     }
 
     /**
@@ -35,6 +35,8 @@ class CreateGatewayTransactionsTable extends Migration
             $table->timestamp('paid_at')->nullable();
             $table->nullableTimestamps();
             $table->softDeletes();
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
