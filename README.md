@@ -1,4 +1,4 @@
-# Parsisolution Gateway
+# Wellbornman Gateway (by use of Parsisolution)
 
 Iranian Payment Gateways
 
@@ -29,13 +29,13 @@ Available 3rd-parties:
 ### Step 1:
 
 ``` bash
-composer require parsisolution/gateway
+composer require wellbornman/gateway
 ```
 
 ### Step 2:
 
 ``` bash
-php artisan vendor:publish --provider="Parsisolution\Gateway\GatewayServiceProvider"
+php artisan vendor:publish --provider="Wellbornman\Gateway\GatewayServiceProvider"
 ```
  
 ### Step 3:
