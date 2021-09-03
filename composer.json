@@ -2,15 +2,15 @@
     "name": "wellbornman/gateway",
     "description": "A Laravel package for connecting to all Iraninan payment gateways",
     "license": "MIT",
-    "homepage": "https://github.com/parsisolution/gateway",
+    "homepage": "https://github.com/wellmanborn/gateway",
     "support": {
-        "issues": "https://github.com/parsisolution/gateway/issues",
-        "source": "https://github.com/parsisolution/gateway"
+        "issues": "https://github.com/wellmanborn/gateway/issues",
+        "source": "https://github.com/wellmanborn/gateway/gateway"
     },
     "authors": [
         {
-            "name": "Hamed Ehtesham",
-            "email": "parsisolution@gmail.com"
+            "name": "Behzad Dadashpour",
+            "email": "behzaddadashpour@yahoo.com"
         }
     ],
     "require": {

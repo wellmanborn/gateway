@@ -138,6 +138,8 @@ class Transaction
             'extra'      => json_encode($transaction->getExtra()),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
+            'user_id'    => $transaction->getUserId(),
+            'company'    => $transaction->getCompany()
         ]);
 
         $this->id = $uid;

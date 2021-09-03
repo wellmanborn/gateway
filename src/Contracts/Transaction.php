@@ -34,4 +34,18 @@ interface Transaction
      * @return array
      */
     public function getRaw();
+
+    /**
+     * Get the user id.
+     *
+     * @return int
+     */
+    public function getUserId();
+
+    /**
+     * Get the company.
+     *
+     * @return string
+     */
+    public function getCompany();
 }

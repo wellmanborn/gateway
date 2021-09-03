@@ -17,6 +17,16 @@ abstract class AbstractTransaction implements ArrayAccess, Transaction
     protected $amount;
 
     /**
+     * @var integer
+     */
+    protected $user_id;
+
+    /**
+     * @var integer
+     */
+    protected $company;
+
+    /**
      * The transaction's extra data.
      *
      * @var array
@@ -36,6 +46,22 @@ abstract class AbstractTransaction implements ArrayAccess, Transaction
     public function getAmount()
     {
         return $this->amount;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getUserId()
+    {
+        return $this->user_id;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function getCompany()
+    {
+        return $this->company;
     }
 
     /**

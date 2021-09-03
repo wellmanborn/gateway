@@ -32,6 +32,28 @@ class RequestTransaction extends AbstractTransaction
     }
 
     /**
+     * @param $user_id
+     * @return $this
+     */
+    public function setUserId($user_id)
+    {
+        $this->user_id = $user_id;
+
+        return $this;
+    }
+
+    /**
+     * @param $company
+     * @return $this
+     */
+    public function setCompany($company)
+    {
+        $this->company = $company;
+
+        return $this;
+    }
+
+    /**
      * Set the extra information about the transaction.
      *
      * @param array $extra
